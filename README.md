@@ -1,55 +1,79 @@
-# Rust-webapp-starter
-Rust single page webapp written in actix-web with vuejs.
-- Async stable Actix-web framework
-- diesel, postgresql r2d2
-- SPA CORS JWT
-- Vuejs Parcel-bundler
+##  Rapid Web Application Scaffold
 
-## How To
-    first create a name 'webapp' postgresql database for this project.
+This repository provides a ready-to-deploy web application foundation built with Rust and Vue.js.
 
-## when development
-```bash
-$ git clone https://github.com/OUISRC/Rust-webapp-starter.git
-$ cd Rust-webapp-starter
-$ cargo install diesel_cli --no-default-features --features postgres
-$ diesel setup
-$ cargo run
+**Prerequisites:**
 
-// another shell
+- PostgreSQL database named 'webapp'
 
-$ cd Rust-webapp-starter/webapp
-$ npm install
-$ npm run dev
-```
-then open broswer 'http://localhost:1234/'
+**Development Setup:**
 
-## when production
+1. Clone the repository:
+   ```bash
+   git clone <repository_url>
+   ```
 
-```bash
-$ git clone https://github.com/OUISRC/Rust-webapp-starter.git
-$ cd Rust-webapp-starter
-$ cargo install diesel_cli --no-default-features --features postgres
-$ diesel setup
-$ cd webapp
-$ npm install
-$ npm run build
-$ cd ..
-$ cargo run
-```
-then open broswer 'http://localhost:8000/'
+2. Install Diesel CLI:
+   ```bash
+   cargo install diesel_cli --no-default-features --features postgres
+   ```
 
-## worked
-- signup (done)
-- signin (done)
-- browse pages data : get/post (done)
-- publish article (done)
-- user center : jwt (done)
+3. Initialize Diesel:
+   ```bash
+   diesel setup
+   ```
 
-### Contribute
- 
-welcome to contribute !
+4. Start the backend:
+   ```bash
+   cargo run
+   ```
 
-### License
+5. Navigate to the frontend directory and install dependencies:
+   ```bash
+   cd webapp
+   npm install
+   ```
 
-[LICENSE-APACHE](https://github.com/OUIRC/Rust-webapp-starter/blob/master/LICENSE).
+6. Run the development server:
+   ```bash
+   npm run dev 
+   ```
+
+7. Access the application at `http://localhost:1234/`
+
+**Production Deployment:**
+
+1. Clone the repository and install Diesel CLI (as per development setup).
+2. Initialize Diesel (as per development setup).
+3. Navigate to the frontend directory and install dependencies:
+   ```bash
+   cd webapp
+   npm install
+   ```
+4. Build the frontend:
+   ```bash
+   npm run build
+   ```
+5. Navigate back to the root directory and start the backend:
+   ```bash
+   cd ..
+   cargo run
+   ```
+6. Access the application at `http://localhost:8000/`
+
+
+**Features:**
+
+- User registration and login
+- Data browsing (GET/POST)
+- Article publishing
+- User-centric functionalities with JWT authentication
+
+
+**Collaboration:**
+
+Contributions are welcome!
+
+**License:**
+
+Apache License 2.0 (See [LICENSE](LICENSE)) 

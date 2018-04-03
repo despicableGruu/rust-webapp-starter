@@ -1,8 +1,7 @@
 [package]
 name = "Rust-webapp-starter"
 version = "0.1.0"
-authors = ["krircc <krircc@aliyun.com>"]
-
+authors = ["Brandon Richardson <brandon.richardson4328@outlook.com>"]
 [[test]]
 name = "tests"
 path = "tests/lib.rs"
